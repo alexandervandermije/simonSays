@@ -1,0 +1,187 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+$primaryYellow : #f7ef00;
+$primaryGreen : #00a513;
+$primaryBlue : #0700db;
+$primaryRed : #db0000;
+
+@font-face
+{
+	font-family: 'Fascinate Inline', cursive;
+	font-family: 'Monoton', cursive;
+	font-family: 'Press Start 2P', cursive;
+	font-family: 'Iceland', cursive;
+}
+
+
+p
+{
+	color: white;
+	text-shadow: 3px 3px $primaryRed;
+	font-family: 'Monoton';
+	display:inline;
+	font-size:32px;
+}
+h2
+{
+	font-size:72px;
+	text-align:center;
+	font-family:'Monoton';
+	color: complement($primaryRed);
+	text-shadow: 3px 3px $primaryRed;
+}
+#simonSaysContainer
+{
+	background-color:black;
+	width:960px;
+	height:650px;
+	padding-bottom: 0.5em;
+
+	#titleRow
+	{
+		margin-top:1%;
+	}
+	#gameContainer
+	{
+		margin-top:2%;
+	}
+
+	.simonButtons
+	{
+		height:10em;
+		width:10em;
+		border-radius:100%;
+		margin-top:1%;
+		&:focus
+		{
+			outline:none;
+		}
+	}
+	#topRow
+	{
+		margin-bottom:-2.3em;
+		text-align:center;
+	}
+	#middleRow
+	{
+		margin-right:55px;
+		text-align:center;
+	}
+	#bottomRow
+	{
+		margin-top:-2.3em;
+		text-align:center;
+	}
+	#controlGameButtonRow
+	{
+		text-align:center;
+		margin-top:40px;
+		
+		.controlGameButton
+		{
+			width:13em;
+			height:2em;
+			text-align:center;
+			font-size:2em;
+			font-family: 'Press Start 2P';
+		}
+	}
+	#infoContainer
+	{
+		margin-top:38px;
+
+		#roundCounter
+		{
+			float:left;
+		}
+		#scoreCounter
+		{
+			float:right;
+		}	
+	}
+	
+	#redButton
+	{
+
+		background-color:$primaryRed;
+		box-shadow: inset 0px 0px 20px 2px darken($primaryRed, 20%);
+		&:hover
+		{
+			background-color: lighten($primaryRed, 10%);
+		}
+		&:active
+		{
+			box-shadow: inset 0px 0px 20px 10px darken($primaryRed, 20%);
+		}
+		
+	}
+
+	#blueButton
+	{
+		margin-left:5em;
+		background-color:$primaryBlue;
+		box-shadow: inset 0px 0px 20px 2px darken($primaryBlue, 20%);
+		&:hover
+		{
+			background-color: lighten($primaryBlue, 10%);
+		}
+		&:active
+		{
+			box-shadow: inset 0px 0px 20px 10px darken($primaryBlue, 20%);
+		}
+		
+	}
+	#greenButton
+	{
+		margin-left:5em;
+		background-color:$primaryGreen;
+		box-shadow: inset 0px 0px 20px 2px darken($primaryGreen, 20%);
+		&:hover
+		{
+			background-color: lighten($primaryGreen, 10%);
+		}
+		&:active
+		{
+			box-shadow: inset 0px 0px 20px 10px darken($primaryGreen, 20%);
+		}
+	}
+	#yellowButton
+	{
+		background-color:$primaryYellow;
+		box-shadow: inset 0px 0px 20px 2px darken($primaryYellow, 20%);
+		&:hover
+		{
+			background-color: lighten($primaryYellow, 10%);
+		}
+		&:active
+		{
+			box-shadow: inset 0px 0px 20px 10px darken($primaryYellow, 20%);
+		}
+	}
+}
+
+.activatedBlue
+{
+	background-color: lighten($primaryBlue, 25%)!important;
+	box-shadow: inset 0px 0px 20px 10px darken($primaryBlue, 20%)!important;
+}
+.activatedRed
+{
+	background-color: lighten($primaryRed, 25%)!important;
+	box-shadow: inset 0px 0px 20px 10px darken($primaryRed, 20%)!important;
+}
+.activatedGreen
+{
+	background-color: lighten($primaryGreen, 25%)!important;
+	box-shadow: inset 0px 0px 20px 10px darken($primaryGreen, 20%)!important;
+}
+.activatedYellow
+{
+	background-color: lighten($primaryYellow, 25%)!important;
+	box-shadow: inset 0px 0px 20px 10px darken($primaryYellow, 20%)!important;
+}

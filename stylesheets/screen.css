@@ -1,0 +1,237 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+@font-face {
+  font-family: 'Fascinate Inline', cursive;
+  font-family: 'Monoton', cursive;
+  font-family: 'Press Start 2P', cursive;
+  font-family: 'Iceland', cursive;
+}
+/* line 22, ../sass/screen.scss */
+p {
+  color: white;
+  text-shadow: 3px 3px #db0000;
+  font-family: 'Monoton';
+  display: inline;
+  font-size: 32px;
+}
+
+/* line 30, ../sass/screen.scss */
+h2 {
+  font-size: 72px;
+  text-align: center;
+  font-family: 'Monoton';
+  color: #00dbdb;
+  text-shadow: 3px 3px #db0000;
+}
+
+/* line 38, ../sass/screen.scss */
+#simonSaysContainer {
+  background-color: black;
+  width: 960px;
+  height: 650px;
+  padding-bottom: 0.5em;
+}
+/* line 45, ../sass/screen.scss */
+#simonSaysContainer #titleRow {
+  margin-top: 1%;
+}
+/* line 49, ../sass/screen.scss */
+#simonSaysContainer #gameContainer {
+  margin-top: 2%;
+}
+/* line 54, ../sass/screen.scss */
+#simonSaysContainer .simonButtons {
+  height: 10em;
+  width: 10em;
+  border-radius: 100%;
+  margin-top: 1%;
+}
+/* line 60, ../sass/screen.scss */
+#simonSaysContainer .simonButtons:focus {
+  outline: none;
+}
+/* line 65, ../sass/screen.scss */
+#simonSaysContainer #topRow {
+  margin-bottom: -2.3em;
+  text-align: center;
+}
+/* line 70, ../sass/screen.scss */
+#simonSaysContainer #middleRow {
+  margin-right: 55px;
+  text-align: center;
+}
+/* line 75, ../sass/screen.scss */
+#simonSaysContainer #bottomRow {
+  margin-top: -2.3em;
+  text-align: center;
+}
+/* line 80, ../sass/screen.scss */
+#simonSaysContainer #controlGameButtonRow {
+  text-align: center;
+  margin-top: 40px;
+}
+/* line 85, ../sass/screen.scss */
+#simonSaysContainer #controlGameButtonRow .controlGameButton {
+  width: 13em;
+  height: 2em;
+  text-align: center;
+  font-size: 2em;
+  font-family: 'Press Start 2P';
+}
+/* line 94, ../sass/screen.scss */
+#simonSaysContainer #infoContainer {
+  margin-top: 38px;
+}
+/* line 98, ../sass/screen.scss */
+#simonSaysContainer #infoContainer #roundCounter {
+  float: left;
+}
+/* line 102, ../sass/screen.scss */
+#simonSaysContainer #infoContainer #scoreCounter {
+  float: right;
+}
+/* line 108, ../sass/screen.scss */
+#simonSaysContainer #redButton {
+  background-color: #db0000;
+  box-shadow: inset 0px 0px 20px 2px #750000;
+}
+/* line 113, ../sass/screen.scss */
+#simonSaysContainer #redButton:hover {
+  background-color: #ff0f0f;
+}
+/* line 117, ../sass/screen.scss */
+#simonSaysContainer #redButton:active {
+  box-shadow: inset 0px 0px 20px 10px #750000;
+}
+/* line 124, ../sass/screen.scss */
+#simonSaysContainer #blueButton {
+  margin-left: 5em;
+  background-color: #0700db;
+  box-shadow: inset 0px 0px 20px 2px #040075;
+}
+/* line 129, ../sass/screen.scss */
+#simonSaysContainer #blueButton:hover {
+  background-color: #170fff;
+}
+/* line 133, ../sass/screen.scss */
+#simonSaysContainer #blueButton:active {
+  box-shadow: inset 0px 0px 20px 10px #040075;
+}
+/* line 139, ../sass/screen.scss */
+#simonSaysContainer #greenButton {
+  margin-left: 5em;
+  background-color: #00a513;
+  box-shadow: inset 0px 0px 20px 2px #003f07;
+}
+/* line 144, ../sass/screen.scss */
+#simonSaysContainer #greenButton:hover {
+  background-color: #00d819;
+}
+/* line 148, ../sass/screen.scss */
+#simonSaysContainer #greenButton:active {
+  box-shadow: inset 0px 0px 20px 10px #003f07;
+}
+/* line 153, ../sass/screen.scss */
+#simonSaysContainer #yellowButton {
+  background-color: #f7ef00;
+  box-shadow: inset 0px 0px 20px 2px #918c00;
+}
+/* line 157, ../sass/screen.scss */
+#simonSaysContainer #yellowButton:hover {
+  background-color: #fff82b;
+}
+/* line 161, ../sass/screen.scss */
+#simonSaysContainer #yellowButton:active {
+  box-shadow: inset 0px 0px 20px 10px #918c00;
+}
+
+/* line 168, ../sass/screen.scss */
+.activatedBlue {
+  background-color: #615cff !important;
+  box-shadow: inset 0px 0px 20px 10px #040075 !important;
+}
+
+/* line 173, ../sass/screen.scss */
+.activatedRed {
+  background-color: #ff5c5c !important;
+  box-shadow: inset 0px 0px 20px 10px #750000 !important;
+}
+
+/* line 178, ../sass/screen.scss */
+.activatedGreen {
+  background-color: #26ff3f !important;
+  box-shadow: inset 0px 0px 20px 10px #003f07 !important;
+}
+
+/* line 183, ../sass/screen.scss */
+.activatedYellow {
+  background-color: #fffb78 !important;
+  box-shadow: inset 0px 0px 20px 10px #918c00 !important;
+}

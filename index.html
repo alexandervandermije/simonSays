@@ -1,0 +1,67 @@
+<!doctype html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <style>
+            body {
+                padding-top: 50px;
+                padding-bottom: 20px;
+            }
+        </style>
+        <style>
+            @import url('https://fonts.googleapis.com/css?family=Fascinate+Inline|Iceland|Monoton|Press+Start+2P');
+        </style>
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+        <link href="stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
+        <!--[if IE]>
+            <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+        <![endif]-->
+
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+    <body ng-app="simonSaysApp" ng-controller="SimonSaysController">
+        <div class='container' id="simonSaysContainer">
+            <div class="row" id="titleRow">
+                <div class="col-sm-12">
+                    <h2>Simon Says</h2>
+                </div>
+            </div>
+            <div id="gameContainer">
+                <div id="topRow" class="row">
+                    <button ng-click="clickedButton('red')"  class="btn simonButtons" id="redButton"></button>
+                </div>
+                <div id="middleRow" class="row">
+                    <button ng-click="clickedButton('blue')" class="btn simonButtons" id="blueButton"></button>
+                    <button ng-click="clickedButton('green')" class="btn simonButtons" id="greenButton"></button>
+                </div>
+                <div id="bottomRow" class="row">
+                    <button ng-click="clickedButton('yellow')" class="btn simonButtons" id="yellowButton"></button> 
+                </div>
+            </div>
+            <div id="controlGameButtonRow">
+                <button ng-click="startGame()" ng-hide="gameStarted" class="controlGameButton btn btn-success">Start Game</button>
+                <button ng-click="restartGame()" ng-show="gameStarted" class="controlGameButton btn btn-danger">Reset Game</button>
+            </div>
+            <div id="scoreRow">
+                <div id='infoContainer'>
+                    <p id="roundCounter">Round : {{round}}</p>
+                    <p id="scoreCounter">Score : {{score}}</p>
+                </div>
+            </div>
+        </div>    
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
